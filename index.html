@@ -93,13 +93,30 @@ js:["JavaScript: Node.js (descarga oficial)","https://nodejs.org/en/download"],
 cpp:["C++: cómo empezar (isocpp.org)","https://isocpp.org/get-started"],
 cs:["C#: SDK de .NET (descarga oficial)","https://dotnet.microsoft.com/download"],
 java:["Java: JDK (Eclipse Temurin)","https://adoptium.net/"],
-php:["PHP: descargas (sitio oficial)","https://www.php.net/downloads"]};
+php:["PHP: descargas (sitio oficial)","https://www.php.net/downloads"],
+v_js:["JavaScript: curso desde cero (YouTube)","https://www.youtube.com/results?search_query=JavaScript+curso+desde+cero"],p_js:["De PSeInt a JavaScript (YouTube)","https://www.youtube.com/results?search_query=de+PSeInt+a+JavaScript"],
+v_cpp:["C++: curso desde cero (YouTube)","https://www.youtube.com/results?search_query=C%2B%2B+curso+desde+cero"],p_cpp:["De PSeInt a C++ (YouTube)","https://www.youtube.com/results?search_query=de+PSeInt+a+C%2B%2B"],
+v_cs:["C#: curso desde cero (YouTube)","https://www.youtube.com/results?search_query=C%23+curso+desde+cero"],p_cs:["De PSeInt a C# (YouTube)","https://www.youtube.com/results?search_query=de+PSeInt+a+C%23"],
+v_java:["Java: curso desde cero (YouTube)","https://www.youtube.com/results?search_query=Java+curso+desde+cero"],p_java:["De PSeInt a Java (YouTube)","https://www.youtube.com/results?search_query=de+PSeInt+a+Java"],
+v_php:["PHP: curso desde cero (YouTube)","https://www.youtube.com/results?search_query=PHP+curso+desde+cero"],p_php:["De PSeInt a PHP (YouTube)","https://www.youtube.com/results?search_query=de+PSeInt+a+PHP"]};
 const EXT=["ps","py","gu","ch","js","cpp","cs","java","php"];
-const C={0:"#1F2A44",1:"#0E9F8E",2:"#E0762B",3:"#6C5CE7",4:"#D63B5A"};
-const NAMES=["🏠 Inicio","🧩 Módulo 1","🔀 Módulo 2","📦 Módulo 3","🌐 Módulo 4","🏆 Final"];
+const C={0:"#1F2A44",1:"#0E9F8E",2:"#E0762B",3:"#6C5CE7",4:"#D63B5A",5:"#2F80ED",6:"#C98A00",7:"#1F9D55"};
+const NAMES=["🏠 Inicio","🧩 Módulo 1","🔀 Módulo 2","📦 Módulo 3","🌐 Módulo 4","🔤 Módulo 5","🧱 Módulo 6","🏆 Final"];
+const PSS=String.raw`Algoritmo Suma
+  Definir a, b Como Real
+  Escribir "Primer número:"
+  Leer a
+  Escribir "Segundo número:"
+  Leer b
+  Si a + b > 10 Entonces
+    Escribir "Suma grande: ", a + b
+  SiNo
+    Escribir "Suma pequeña: ", a + b
+  FinSi
+FinAlgoritmo`;
 const S=[
 {t:"cover",m:0},
-{m:0,k:"TU RUTA",h:"Mapa de aprendizaje",b:["Estudia <b>30 minutos al día</b>: lee la diapositiva, mira el video, resuelve el reto (con pista) y cierra con el quiz. Tu progreso se guarda en este navegador."],c:[["🧩","Módulo 1 · Fundamentos","Algoritmos, variables, Leer/Escribir y operadores. Semanas 1-2."],["🔀","Módulo 2 · Decisiones y ciclos","Si, SiNo, Segun, Para, Mientras y Repetir. Semanas 1-2."],["📦","Módulo 3 · Vectores y subprocesos","Listas de datos, búsqueda, funciones y proyecto de ventas. Semanas 3-4."],["🌐","Módulo 4 · De PSeInt a 6 lenguajes","Python, JavaScript, C++, C#, Java y PHP: equivalencias y tu primer programa real. Semanas 5-6."]]},
+{m:0,k:"TU RUTA",h:"Mapa de aprendizaje",b:["Estudia <b>30 minutos al día</b>: lee la diapositiva, mira el video, resuelve el reto (con pista) y cierra con el quiz. Tu progreso se guarda en este navegador."],c:[["🧩","Módulo 1 · Fundamentos","Algoritmos, variables, Leer/Escribir y operadores. Semanas 1-2."],["🔀","Módulo 2 · Decisiones y ciclos","Si, SiNo, Segun, Para, Mientras y Repetir. Semanas 1-2."],["📦","Módulo 3 · Vectores y subprocesos","Listas de datos, búsqueda, funciones y proyecto de ventas. Semanas 3-4."],["🌐","Módulo 4 · De PSeInt a 6 lenguajes","Python, JavaScript, C++, C#, Java y PHP: equivalencias y tu primer programa real. Semanas 5-6."],["🔤","Módulo 5 · Cadenas y matrices","Texto y tablas de datos en los 6 lenguajes. Semana 7."],["🧱","Módulo 6 · Clases y errores","Objetos y manejo de errores con try/catch. Semana 8."]]},
 {m:1,k:"MÓDULO 1 · TU ENTORNO",h:"Instala PSeInt y ejecuta tu primer código",b:["PSeInt es un programa gratuito para escribir pseudocódigo y ejecutarlo paso a paso, ideal para aprender la lógica sin pelear con la sintaxis."],c:[["⬇️","1. Descarga","Instálalo desde el sitio oficial (gratis; Windows, Mac y Linux)."],["📝","2. Archivo nuevo","Tu código va entre <b>Algoritmo</b> y <b>FinAlgoritmo</b>."],["⌨️","3. Escribe","Una instrucción por línea. Los comentarios empiezan con //."],["▶️","4. Ejecuta","Pulsa el botón verde o F9 y prueba con distintos datos."]],l:["ps","a"]},
 {m:1,k:"MÓDULO 1 · FUNDAMENTOS",h:"Algoritmos, variables y operadores",b:["Un <b>algoritmo</b> es una secuencia ordenada de pasos para resolver un problema.","<b>Leer</b> captura datos, <b>Escribir</b> los muestra. Operadores: + - * / y <b>MOD</b> (residuo)."],
  ps:'Algoritmo Saludo\n  Definir nombre Como Cadena\n  Escribir "Ingresa tu nombre:"\n  Leer nombre\n  Escribir "Hola, ", nombre, "!"\nFinAlgoritmo',
@@ -148,16 +165,318 @@ const S=[
 {t:"ml",m:4,k:"MÓDULO 4 · MULTILENGUAJE",h:"Traductor de 6 lenguajes",b:["Elige un lenguaje y compara cada instrucción de PSeInt con su equivalente. La pestaña que elijas se recuerda en las diapositivas de código."]},
 {m:4,k:"MÓDULO 4 · EJECUTAR",h:"Cómo ejecutar tu primer programa",b:["Un buen editor para todos estos lenguajes es <b>VS Code</b> (gratis). También puedes probar el código en un compilador en línea antes de instalar nada."],c:[["🟨","JavaScript","Abre la consola del navegador (F12) y pega el código, o usa Node.js con <b>node archivo.js</b>. Ojo: prompt() solo existe en el navegador."],["⚙️","C++","Instala un compilador (g++). Compila con <b>g++ archivo.cpp -o programa</b> y ejecuta <b>./programa</b>."],["🔷","C#","Instala el SDK de .NET, crea el proyecto con <b>dotnet new console</b> y ejecuta <b>dotnet run</b>."],["☕","Java","Instala el JDK. Compila con <b>javac Saludo.java</b> y ejecuta <b>java Saludo</b>. El archivo se llama igual que la clase pública."],["🐘","PHP","Instala PHP y ejecuta en la terminal <b>php archivo.php</b>. Para verlo en una web necesitas un servidor (XAMPP, Apache)."]],l:["js","cpp","cs","java","php"]},
 {m:4,k:"MÓDULO 4 · DIFERENCIAS",h:"Lo que cambia entre lenguajes",b:["Antes de traducir, ten presentes las diferencias de sintaxis más comunes."],c:[["🔚","Punto y coma","C++, C#, Java y PHP exigen ; al final de cada instrucción. JavaScript lo recomienda y Python no lo usa."],["{ }","Llaves","Reemplazan a FinSi, FinPara y FinMientras. En Python la sangría cumple ese papel."],["🏷️","Tipos de dato","C++, C#, Java piden declarar el tipo (int, double, string). JavaScript, PHP y Python lo deducen."],["💲","Variables en PHP","Toda variable lleva $ al inicio: $nombre, $total."],["0️⃣","Índices desde 0","En los 6 lenguajes el primer elemento es v[0], no v[1]."],["⚖️","Igualdad","Se compara con == (en JavaScript prefiere ===). Un solo = es asignar. En Java, el texto se compara con .equals()."],["🛠️","Compilar o interpretar","C++, C# y Java se compilan antes de ejecutar; JavaScript, PHP y Python se interpretan."]]},
+{m:4,k:"MÓDULO 4 · RUTA POR LENGUAJE",h:"De PSeInt a otro lenguaje en 5 pasos",b:["Estos 5 pasos sirven para cualquier lenguaje. A continuación verás una diapositiva por lenguaje con el mismo programa traducido: leer dos números y decidir si la suma es mayor a 10.","Siempre traduces la lógica que ya tienes; solo cambias la sintaxis."],c:[["⬇️","Paso 1 · Instala","Prepara la herramienta para ejecutar código en ese lenguaje."],["🧱","Paso 2 · Esqueleto","Averigua cómo se reemplaza Algoritmo / FinAlgoritmo."],["⌨️","Paso 3 · Entrada y salida","Cambia Leer y Escribir por las instrucciones del lenguaje."],["🔀","Paso 4 · Variables y decisiones","Traduce Definir, la asignación <- y Si / SiNo."],["✅","Paso 5 · Prueba","Ejecuta con casos distintos y corrige los errores del compilador."]]},
+{m:4,k:"MÓDULO 4 · JAVASCRIPT",h:"De PSeInt a JavaScript, paso a paso",b:["JavaScript es el lenguaje de la web. Es el más cercano a PSeInt en espíritu: no necesitas declarar tipos ni un programa principal.","Compara las dos pestañas: es el mismo programa. Luego sigue los 5 pasos y mira los videos de referencia."],ps:PSS,js:String.raw`let a = parseFloat(prompt("Primer número:"));
+let b = parseFloat(prompt("Segundo número:"));
+if (a + b > 10) {
+  console.log("Suma grande: " + (a + b));
+} else {
+  console.log("Suma pequeña: " + (a + b));
+}`,c:[["⬇️","JavaScript · 1. Instala","No instales nada: abre la consola del navegador (F12) o instala Node.js para ejecutar archivos .js."],["🧱","JavaScript · 2. Esqueleto","No hay Algoritmo ni FinAlgoritmo: el código empieza directo y cada instrucción termina en punto y coma."],["⌨️","JavaScript · 3. Entrada y salida","Leer se vuelve prompt() y Escribir se vuelve console.log(). prompt devuelve texto: conviértelo con parseFloat()."],["🔀","JavaScript · 4. Variables y decisiones","Definir se vuelve let, la flecha <- se vuelve =, y Si / SiNo / FinSi se vuelve if / else con llaves { }."],["✅","JavaScript · 5. Prueba","Prueba con 3 casos: suma menor, igual y mayor a 10. Compara siempre con ===."]],l:["v_js","p_js"]},
+{m:4,k:"MÓDULO 4 · C++",h:"De PSeInt a C++, paso a paso",b:["C++ es rápido y exige más orden: declaras el tipo de cada variable y escribes un programa principal llamado main.","Compara las dos pestañas: es el mismo programa. Luego sigue los 5 pasos y mira los videos de referencia."],ps:PSS,cpp:String.raw`#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+    cout << "Primer número: ";
+    cin >> a;
+    cout << "Segundo número: ";
+    cin >> b;
+    if (a + b > 10) {
+        cout << "Suma grande: " << a + b << endl;
+    } else {
+        cout << "Suma pequeña: " << a + b << endl;
+    }
+    return 0;
+}`,c:[["⬇️","C++ · 1. Instala","Instala un compilador (g++ o Visual Studio). Compila con g++ archivo.cpp -o programa y ejecuta ./programa."],["🧱","C++ · 2. Esqueleto","Algoritmo / FinAlgoritmo se vuelve int main() { ... return 0; }. Arriba va #include <iostream> y using namespace std;."],["⌨️","C++ · 3. Entrada y salida","Leer se vuelve cin >> variable y Escribir se vuelve cout << texto << endl. Los << encadenan varias cosas."],["🔀","C++ · 4. Variables y decisiones","Definir Como Real se vuelve double. Si / SiNo / FinSi se vuelve if / else con llaves, y cada línea termina en ;."],["✅","C++ · 5. Prueba","Si el compilador marca error, revisa primero los punto y coma, las llaves y los tipos."]],l:["v_cpp","p_cpp"]},
+{m:4,k:"MÓDULO 4 · C#",h:"De PSeInt a C#, paso a paso",b:["C# es el lenguaje de .NET. Se parece a Java: todo vive dentro de una clase y las variables llevan tipo.","Compara las dos pestañas: es el mismo programa. Luego sigue los 5 pasos y mira los videos de referencia."],ps:PSS,cs:String.raw`using System;
+
+class Suma {
+    static void Main() {
+        Console.Write("Primer número: ");
+        double a = double.Parse(Console.ReadLine());
+        Console.Write("Segundo número: ");
+        double b = double.Parse(Console.ReadLine());
+        if (a + b > 10) {
+            Console.WriteLine("Suma grande: " + (a + b));
+        } else {
+            Console.WriteLine("Suma pequeña: " + (a + b));
+        }
+    }
+}`,c:[["⬇️","C# · 1. Instala","Instala el SDK de .NET. Crea el proyecto con dotnet new console y ejecútalo con dotnet run."],["🧱","C# · 2. Esqueleto","Algoritmo / FinAlgoritmo se vuelve class Nombre { static void Main() { ... } }. Arriba va using System;."],["⌨️","C# · 3. Entrada y salida","Leer se vuelve Console.ReadLine() y Escribir se vuelve Console.WriteLine(). ReadLine devuelve texto: usa double.Parse()."],["🔀","C# · 4. Variables y decisiones","Definir Como Real se vuelve double. Si / SiNo / FinSi se vuelve if / else con llaves y cada línea termina en ;."],["✅","C# · 5. Prueba","Un error típico: olvidar convertir el texto de ReadLine antes de sumar."]],l:["v_cs","p_cs"]},
+{m:4,k:"MÓDULO 4 · JAVA",h:"De PSeInt a Java, paso a paso",b:["Java es estricto y muy usado en empresas y Android. Todo va dentro de una clase y las variables siempre llevan tipo.","Compara las dos pestañas: es el mismo programa. Luego sigue los 5 pasos y mira los videos de referencia."],ps:PSS,java:String.raw`import java.util.Scanner;
+
+public class Suma {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Primer número: ");
+        double a = sc.nextDouble();
+        System.out.print("Segundo número: ");
+        double b = sc.nextDouble();
+        if (a + b > 10) {
+            System.out.println("Suma grande: " + (a + b));
+        } else {
+            System.out.println("Suma pequeña: " + (a + b));
+        }
+    }
+}`,c:[["⬇️","Java · 1. Instala","Instala el JDK. Compila con javac Suma.java y ejecuta con java Suma. El archivo se llama igual que la clase pública."],["🧱","Java · 2. Esqueleto","Algoritmo / FinAlgoritmo se vuelve public class Suma { public static void main(String[] args) { ... } }."],["⌨️","Java · 3. Entrada y salida","Leer se vuelve Scanner con sc.nextDouble() y Escribir se vuelve System.out.println(). Arriba va import java.util.Scanner;."],["🔀","Java · 4. Variables y decisiones","Definir Como Real se vuelve double. Si / SiNo / FinSi se vuelve if / else con llaves y cada línea termina en ;."],["✅","Java · 5. Prueba","Revisa mayúsculas: String y System llevan mayúscula inicial, y main va en minúscula."]],l:["v_java","p_java"]},
+{m:4,k:"MÓDULO 4 · PHP",h:"De PSeInt a PHP, paso a paso",b:["PHP corre en el servidor y es la base de muchos sitios web. Sus variables empiezan con $ y no declaran tipo.","Compara las dos pestañas: es el mismo programa. Luego sigue los 5 pasos y mira los videos de referencia."],ps:PSS,php:String.raw`<?php
+echo "Primer número: ";
+$a = (float) trim(fgets(STDIN));
+echo "Segundo número: ";
+$b = (float) trim(fgets(STDIN));
+if ($a + $b > 10) {
+    echo "Suma grande: " . ($a + $b) . "\n";
+} else {
+    echo "Suma pequeña: " . ($a + $b) . "\n";
+}`,c:[["⬇️","PHP · 1. Instala","Instala PHP (o XAMPP) y ejecuta con php archivo.php en la terminal."],["🧱","PHP · 2. Esqueleto","No hay Algoritmo ni FinAlgoritmo: el archivo empieza con <?php y cada instrucción termina en punto y coma."],["⌨️","PHP · 3. Entrada y salida","Leer se vuelve trim(fgets(STDIN)) y Escribir se vuelve echo. El texto se une con un punto, no con coma."],["🔀","PHP · 4. Variables y decisiones","Definir se omite: solo escribes $a = 5;. Si / SiNo / FinSi se vuelve if / else con llaves { }."],["✅","PHP · 5. Prueba","Si ves un error raro, revisa que cada variable tenga su $ al inicio."]],l:["v_php","p_php"]},
 {m:4,k:"MÓDULO 4 · PRÁCTICA",h:"5 retos de traducción",b:["Traduce primero a mano y compara con la exportación de PSeInt."],r:[["Reto 1 · Calculadora","Exporta la calculadora del Módulo 1 y ejecútala.","Usa la opción Exportar de PSeInt y corre python archivo.py."],["Reto 2 · Clasificador","Traduce positivo / negativo / cero.","if, elif, else con sangría de 4 espacios."],["Reto 3 · Tabla","Tabla de multiplicar con for.","for i in range(1, 11):"],["Reto 4 · Ventas","Reescribe el sistema de ventas en Python.","Usa listas y sum() para los totales."],["Reto 5 · Tu lenguaje","Elige JavaScript, C++, C#, Java o PHP y traduce el sistema de ventas.","Empieza por el esqueleto (main, llaves o <?php) y luego traduce línea por línea."]]},
 {t:"quiz",m:4,h:"Quiz del Módulo 4",q:[
  {q:"En Python, ¿cuál es el primer índice de una lista?",o:["0","1","-1"],a:0,w:"Python cuenta desde 0; PSeInt, por defecto, desde 1."},
  {q:"¿Cuál es el equivalente de Escribir en Python?",o:["input()","print()","def"],a:1,w:"print() muestra datos; input() los lee."},
  {q:"¿Qué lenguaje de la lista escribe $ antes del nombre de cada variable?",o:["JavaScript","PHP","C#"],a:1,w:"En PHP todas las variables empiezan con $, por ejemplo $total."},
  {q:"¿Cuál es el equivalente de Repetir...Hasta Que en C++, C#, Java y JavaScript?",o:["do { ... } while (condición);","for (;;) { ... }","switch"],a:0,w:"do-while se ejecuta al menos una vez. Ojo: la condición se invierte; Hasta Que n = 0 equivale a while (n != 0)."}]},
-{m:5,k:"DEPURACIÓN",h:"Errores frecuentes y cómo evitarlos",b:["Antes de dar tu algoritmo por terminado, revisa esta lista."],c:[["❓","Variable no declarada","Define cada variable antes de usarla."],["🧱","Falta FinSi / FinPara","Todo bloque se cierra."],["➗","División entre cero","Valida el divisor antes de dividir."],["📏","Índice fuera de rango","En un vector de 5, los índices van de 1 a 5."],["♾️","Ciclo infinito","Algo dentro debe cambiar la condición."],["🧪","Casos límite","Prueba 0, negativos, vacíos y el valor máximo."]]},
-{t:"trad",m:5,k:"GLOSARIO",h:"Glosario interactivo",b:["Toca cada término para ver su definición."],p:[["Algoritmo","Pasos ordenados para resolver un problema."],["Variable","Espacio con nombre que guarda un dato."],["Condición","Expresión que da Verdadero o Falso."],["Ciclo","Bloque de instrucciones que se repite."],["Vector","Lista de datos del mismo tipo con índices."],["SubProceso","Bloque con nombre que se reutiliza."],["Acumulador","Variable que va sumando valores."],["Bandera","Variable lógica que indica si algo ocurrió."],["Pseudocódigo","Algoritmo escrito en lenguaje casi natural."]]},
-{t:"res",m:5,h:"Videos y recursos",l:["a","b","c","d","e","f","g","h","ch","ps","py","gu","js","cpp","cs","java","php"]},
-{t:"fin",m:5,h:"Reto final y checklist"}];
+{m:5,k:"MÓDULO 5 · CADENAS",h:"Trabajar con texto",b:["Una <b>cadena</b> es texto. Casi todos los lenguajes ofrecen funciones para medir su longitud, cambiar mayúsculas y unir textos (concatenar).","Cambia de pestaña y compara cómo se llama cada operación."],
+ ps:String.raw`Definir texto Como Cadena
+texto <- "Programacion"
+Escribir Longitud(texto)
+Escribir Mayusculas(texto)
+Escribir Concatenar(texto, " basica")`,
+ py:String.raw`texto = "Programacion"
+print(len(texto))
+print(texto.upper())
+print(texto + " basica")`,
+ js:String.raw`let texto = "Programacion";
+console.log(texto.length);
+console.log(texto.toUpperCase());
+console.log(texto + " basica");`,
+ cpp:String.raw`// dentro de main(); incluye <string> y <cctype>
+string texto = "Programacion";
+cout << texto.length() << endl;
+for (char &c : texto) c = toupper(c);
+cout << texto << endl;
+cout << texto + " basica" << endl;`,
+ cs:String.raw`// dentro de Main()
+string texto = "Programacion";
+Console.WriteLine(texto.Length);
+Console.WriteLine(texto.ToUpper());
+Console.WriteLine(texto + " basica");`,
+ java:String.raw`// dentro de main()
+String texto = "Programacion";
+System.out.println(texto.length());
+System.out.println(texto.toUpperCase());
+System.out.println(texto + " basica");`,
+ php:String.raw`<?php
+$texto = "Programacion";
+echo strlen($texto) . "\n";
+echo strtoupper($texto) . "\n";
+echo $texto . " basica\n";`},
+{m:5,k:"MÓDULO 5 · MATRICES",h:"Tablas de datos con ciclos anidados",b:["Una <b>matriz</b> es una tabla con filas y columnas. Para recorrerla se usa un ciclo dentro de otro: uno para las filas y otro para las columnas.","Esta matriz de 2 filas y 3 columnas suma <b>18</b>. Recuerda: en PSeInt los índices empiezan en 1 y en los demás lenguajes en 0."],
+ ps:String.raw`Definir i, j, suma Como Entero
+Dimension m[2,3]
+suma <- 0
+Para i <- 1 Hasta 2 Hacer
+  Para j <- 1 Hasta 3 Hacer
+    m[i,j] <- i * j
+    suma <- suma + m[i,j]
+  FinPara
+FinPara
+Escribir "Suma: ", suma`,
+ py:String.raw`m = [[1, 2, 3], [2, 4, 6]]
+suma = 0
+for fila in m:
+    for dato in fila:
+        suma += dato
+print("Suma:", suma)`,
+ js:String.raw`let m = [[1, 2, 3], [2, 4, 6]];
+let suma = 0;
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 3; j++) {
+    suma += m[i][j];
+  }
+}
+console.log("Suma:", suma);`,
+ cpp:String.raw`// dentro de main()
+int m[2][3] = {{1, 2, 3}, {2, 4, 6}};
+int suma = 0;
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 3; j++) {
+        suma += m[i][j];
+    }
+}
+cout << "Suma: " << suma << endl;`,
+ cs:String.raw`// dentro de Main()
+int[,] m = { {1, 2, 3}, {2, 4, 6} };
+int suma = 0;
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 3; j++) {
+        suma += m[i, j];
+    }
+}
+Console.WriteLine("Suma: " + suma);`,
+ java:String.raw`// dentro de main()
+int[][] m = { {1, 2, 3}, {2, 4, 6} };
+int suma = 0;
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 3; j++) {
+        suma += m[i][j];
+    }
+}
+System.out.println("Suma: " + suma);`,
+ php:String.raw`<?php
+$m = [[1, 2, 3], [2, 4, 6]];
+$suma = 0;
+for ($i = 0; $i < 2; $i++) {
+    for ($j = 0; $j < 3; $j++) {
+        $suma += $m[$i][$j];
+    }
+}
+echo "Suma: " . $suma . "\n";`},
+{m:5,k:"MÓDULO 5 · PRÁCTICA",h:"4 retos de texto y matrices",b:["Resuélvelos primero en PSeInt y luego tradúcelos al lenguaje que elijas."],r:[["Reto 1 · Longitud","Pide una palabra y muestra cuántas letras tiene.","Longitud(texto) en PSeInt; len, length o strlen en los demás."],["Reto 2 · Saludo en mayúsculas","Pide un nombre y salúdalo en mayúsculas.","Combina Mayusculas con la concatenación."],["Reto 3 · Suma de filas","Suma cada fila de una matriz 3x3.","Reinicia el acumulador al empezar cada fila."],["Reto 4 · Diagonal","Suma la diagonal principal de una matriz 3x3.","Es el dato donde fila y columna son iguales: m[i][i]."]]},
+{t:"quiz",m:5,h:"Quiz del Módulo 5",q:[
+ {q:"¿Cómo se recorre una matriz?",o:["Con un ciclo dentro de otro","Con un solo Si","Con Segun"],a:0,w:"Un ciclo recorre las filas y el interior recorre las columnas."},
+ {q:"¿Qué función da la longitud de un texto en JavaScript?",o:["strlen()","texto.length","len()"],a:1,w:"En JavaScript es la propiedad length. strlen es de PHP y len de Python."}]},
+{m:6,k:"MÓDULO 6 · CLASES",h:"Clases y objetos",b:["Una <b>clase</b> es un molde que agrupa datos (<b>atributos</b>) y acciones (<b>métodos</b>). Un <b>objeto</b> es una copia creada con ese molde.","PSeInt no tiene clases, por eso esta diapositiva solo muestra los 6 lenguajes. Ejemplo: un estudiante que sabe si aprobó (nota ≥ 3)."],
+ py:String.raw`class Estudiante:
+    def __init__(self, nombre, nota):
+        self.nombre = nombre
+        self.nota = nota
+
+    def aprobado(self):
+        return self.nota >= 3
+
+e = Estudiante("Ana", 4.5)
+print(e.nombre, e.aprobado())`,
+ js:String.raw`class Estudiante {
+  constructor(nombre, nota) {
+    this.nombre = nombre;
+    this.nota = nota;
+  }
+  aprobado() {
+    return this.nota >= 3;
+  }
+}
+const e = new Estudiante("Ana", 4.5);
+console.log(e.nombre, e.aprobado());`,
+ cpp:String.raw`#include <iostream>
+#include <string>
+using namespace std;
+
+class Estudiante {
+public:
+    string nombre;
+    double nota;
+    Estudiante(string n, double p) : nombre(n), nota(p) {}
+    bool aprobado() { return nota >= 3; }
+};
+
+int main() {
+    Estudiante e("Ana", 4.5);
+    cout << e.nombre << " " << e.aprobado() << endl;
+    return 0;
+}`,
+ cs:String.raw`using System;
+
+class Estudiante {
+    public string Nombre;
+    public double Nota;
+    public Estudiante(string n, double p) { Nombre = n; Nota = p; }
+    public bool Aprobado() { return Nota >= 3; }
+}
+
+class Programa {
+    static void Main() {
+        Estudiante e = new Estudiante("Ana", 4.5);
+        Console.WriteLine(e.Nombre + " " + e.Aprobado());
+    }
+}`,
+ java:String.raw`class Estudiante {
+    String nombre;
+    double nota;
+    Estudiante(String nombre, double nota) {
+        this.nombre = nombre;
+        this.nota = nota;
+    }
+    boolean aprobado() { return nota >= 3; }
+}
+
+public class Programa {
+    public static void main(String[] args) {
+        Estudiante e = new Estudiante("Ana", 4.5);
+        System.out.println(e.nombre + " " + e.aprobado());
+    }
+}`,
+ php:String.raw`<?php
+class Estudiante {
+    public function __construct(public string $nombre, public float $nota) {}
+    public function aprobado(): bool { return $this->nota >= 3; }
+}
+$e = new Estudiante("Ana", 4.5);
+echo $e->nombre . " " . ($e->aprobado() ? "aprobado" : "reprobado") . "\n";`},
+{m:6,k:"MÓDULO 6 · ERRORES",h:"Manejo de errores con try / catch",b:["Un programa profesional no se cae cuando el usuario escribe algo raro: <b>intenta</b> (try) ejecutar y, si falla, <b>atrapa</b> (catch) el error.","En PSeInt se logra validando con Si antes de calcular. Aquí el error típico es dividir entre cero."],
+ ps:String.raw`Leer n
+Si n <> 0 Entonces
+  Escribir 10 / n
+SiNo
+  Escribir "No se puede dividir entre 0"
+FinSi`,
+ py:String.raw`try:
+    n = int(input("Número: "))
+    print(10 / n)
+except ZeroDivisionError:
+    print("No se puede dividir entre 0")
+except ValueError:
+    print("Escribe un número válido")`,
+ js:String.raw`try {
+  let n = parseInt(prompt("Número:"));
+  if (isNaN(n)) throw new Error("Escribe un número válido");
+  if (n === 0) throw new Error("No se puede dividir entre 0");
+  console.log(10 / n);
+} catch (e) {
+  console.log(e.message);
+}`,
+ cpp:String.raw`// dentro de main(); incluye <stdexcept>
+try {
+    int n;
+    cin >> n;
+    if (n == 0) throw runtime_error("No se puede dividir entre 0");
+    cout << 10 / n << endl;
+} catch (const exception &e) {
+    cout << e.what() << endl;
+}`,
+ cs:String.raw`// dentro de Main()
+try {
+    int n = int.Parse(Console.ReadLine());
+    Console.WriteLine(10 / n);
+} catch (DivideByZeroException) {
+    Console.WriteLine("No se puede dividir entre 0");
+} catch (FormatException) {
+    Console.WriteLine("Escribe un número válido");
+}`,
+ java:String.raw`// dentro de main(), con Scanner sc
+try {
+    int n = sc.nextInt();
+    System.out.println(10 / n);
+} catch (ArithmeticException e) {
+    System.out.println("No se puede dividir entre 0");
+} catch (java.util.InputMismatchException e) {
+    System.out.println("Escribe un número válido");
+}`,
+ php:String.raw`<?php
+try {
+    $n = (int) trim(fgets(STDIN));
+    echo intdiv(10, $n) . "\n";
+} catch (DivisionByZeroError $e) {
+    echo "No se puede dividir entre 0\n";
+}`},
+{m:6,k:"MÓDULO 6 · PRÁCTICA",h:"3 retos de clases y errores",b:["Elige tu lenguaje favorito para estos retos."],r:[["Reto 1 · Clase Producto","Crea la clase Producto con nombre y precio, y un método que aplique 10% de descuento.","Atributos nombre y precio; el método devuelve precio * 0.9."],["Reto 2 · Lista de objetos","Crea 3 estudiantes y muestra cuáles aprobaron.","Guárdalos en una lista y recórrela con un ciclo."],["Reto 3 · Entrada segura","Pide un número y muestra un mensaje amable si escriben texto.","Envuelve la conversión en try / catch."]]},
+{t:"quiz",m:6,h:"Quiz del Módulo 6",q:[
+ {q:"¿Qué es un objeto?",o:["Una copia creada a partir de una clase","Un tipo de ciclo","Un error del programa"],a:0,w:"La clase es el molde y el objeto es cada copia creada con él."},
+ {q:"¿Para qué sirve try / catch?",o:["Para repetir código","Para atrapar errores sin que el programa se caiga","Para declarar variables"],a:1,w:"try ejecuta el código riesgoso y catch decide qué hacer si falla."}]},
+{m:7,k:"DEPURACIÓN",h:"Errores frecuentes y cómo evitarlos",b:["Antes de dar tu algoritmo por terminado, revisa esta lista."],c:[["❓","Variable no declarada","Define cada variable antes de usarla."],["🧱","Falta FinSi / FinPara","Todo bloque se cierra."],["➗","División entre cero","Valida el divisor antes de dividir."],["📏","Índice fuera de rango","En un vector de 5, los índices van de 1 a 5."],["♾️","Ciclo infinito","Algo dentro debe cambiar la condición."],["🧪","Casos límite","Prueba 0, negativos, vacíos y el valor máximo."]]},
+{t:"trad",m:7,k:"GLOSARIO",h:"Glosario interactivo",b:["Toca cada término para ver su definición."],p:[["Algoritmo","Pasos ordenados para resolver un problema."],["Variable","Espacio con nombre que guarda un dato."],["Condición","Expresión que da Verdadero o Falso."],["Ciclo","Bloque de instrucciones que se repite."],["Vector","Lista de datos del mismo tipo con índices."],["SubProceso","Bloque con nombre que se reutiliza."],["Acumulador","Variable que va sumando valores."],["Bandera","Variable lógica que indica si algo ocurrió."],["Pseudocódigo","Algoritmo escrito en lenguaje casi natural."]]},
+{t:"res",m:7,h:"Videos y recursos",l:["a","b","c","d","e","f","g","h","ch","ps","py","gu","js","cpp","cs","java","php"]},
+{t:"fin",m:7,h:"Reto final y checklist"}];
 /* ===== Código en JavaScript, C++, C#, Java y PHP ===== */
 const X={
 saludo:{
@@ -715,6 +1034,7 @@ const VQ={
 "Variables en PHP":"PHP variables signo dólar",
 "Igualdad":"diferencia == y === JavaScript",
 "Compilar o interpretar":"lenguaje compilado vs interpretado explicado"};
+Object.assign(VQ,{"Módulo 5 · Cadenas y matrices":"cadenas y matrices programación para principiantes","Módulo 6 · Clases y errores":"clases y objetos try catch programación para principiantes"});
 const YTS="https://www.youtube.com/results?search_query=";
 const vidsHtml=t=>{const q=VQ[t];if(!q)return"";return `<div class="vl"><a target="_blank" rel="noopener" href="${YTS+encodeURIComponent(q)}">▶ Ver videos</a><a class="alt" target="_blank" rel="noopener" href="${YTS+encodeURIComponent(q+" ejercicios resueltos")}">Ejercicios resueltos</a></div>`};
 const cardHtml=c=>{const d=DET[c[1]];return `<div class="box cd${d?" tg":""}"${d?' tabindex="0" role="button"':""}><div class="ic">${c[0]}</div><h4>${c[1]}</h4><p>${c[2]}</p>${d?`<div class="hint">👆 Toca para ver más</div><div class="dt"><p>${d.d}</p>${d.x?`<pre class="mini">${esc(d.x)}</pre>`:""}${vidsHtml(c[1])}</div>`:""}</div>`};
@@ -833,6 +1153,9 @@ nombre.equals("Ana")   // Java`},
 "Compilar o interpretar":{d:"Compilar traduce todo el programa antes de ejecutarlo (C++, C#, Java). Interpretar lo ejecuta línea por línea (JavaScript, PHP, Python).",x:String.raw`g++ a.cpp -o a && ./a    # compilar y ejecutar
 python a.py              # interpretar`}
 };
+Object.assign(DET,{"Módulo 5 · Cadenas y matrices":{d:"Aprenderás a manipular texto y a recorrer tablas de datos con ciclos anidados.",x:String.raw`texto.length
+m[fila][columna]`},"Módulo 6 · Clases y errores":{d:"Crearás objetos con clases y harás programas que no se caen gracias a try / catch.",x:String.raw`class Estudiante { ... }
+try { ... } catch { ... }`}});
 const esc=t=>t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 function mlHtml(){const j=1+MLK.indexOf(mlg);return `<table class="eq"><tr><th>PSeInt</th><th>${LN[mlg].toUpperCase()}</th></tr>`+ML.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[j])}</td></tr>`).join("")+"</table>"}
 function code(s){const av=avl(s),c=cur(s);let o='<div class="box"><div class="tabs">';if(av.length>1)o+=av.map(k=>`<button data-t="${k}" class="${k==c?"on":""}">${LN[k]}</button>`).join("");return o+'<button class="cp">Copiar</button></div><pre class="cdv"></pre><div class="li"></div></div>'}
@@ -840,12 +1163,12 @@ function head(s){return `<div class="k">${s.k||""}</div><h1>${s.h}</h1>`}
 function render(){
  const s=S[i];document.documentElement.style.setProperty("--c",C[s.m]);
  let h='<div class="slide">';
- if(s.t=="cover")h+=`<div class="k">PSEINT → PYTHON, JAVASCRIPT, C++, C#, JAVA Y PHP · CURSO INTERACTIVO</div><h1 class="big">De la Lógica al Código</h1><p class="mut" style="font-size:21px;max-width:720px">Tu aventura de 4 módulos: aprende a pensar como programador con PSeInt y da el salto a Python, JavaScript, C++, C#, Java y PHP con ejemplos, retos, quizzes y videos.</p><div class="stats"><div><b>4</b>módulos</div><div><b>${S.length}</b>diapositivas</div><div><b>${NQ}</b>preguntas</div><div><b>6</b>lenguajes</div><div><b>8</b>videos</div></div><p>${[1,2,3,4].map(n=>`<button class="chip on" style="--c:${C[n]}" data-go="${n}">${NAMES[n]}</button>`).join(" ")}</p><p><button class="btn" id="st">Empezar la aventura →</button></p>`;
+ if(s.t=="cover")h+=`<div class="k">PSEINT → PYTHON, JAVASCRIPT, C++, C#, JAVA Y PHP · CURSO INTERACTIVO</div><h1 class="big">De la Lógica al Código</h1><p class="mut" style="font-size:21px;max-width:720px">Tu aventura de 6 módulos: aprende a pensar como programador con PSeInt y da el salto a Python, JavaScript, C++, C#, Java y PHP con ejemplos, retos, quizzes y videos.</p><div class="stats"><div><b>4</b>módulos</div><div><b>${S.length}</b>diapositivas</div><div><b>${NQ}</b>preguntas</div><div><b>6</b>lenguajes</div><div><b>8</b>videos</div></div><p>${[1,2,3,4,5,6].map(n=>`<button class="chip on" style="--c:${C[n]}" data-go="${n}">${NAMES[n]}</button>`).join(" ")}</p><p><button class="btn" id="st">Empezar la aventura →</button></p>`;
  else if(s.t=="quiz"){h+=`<div class="k">QUIZ</div><h1>${s.h}</h1><div class="grid">`+s.q.map((q,n)=>`<div class="box"><b>${q.q}</b>${q.o.map((o,j)=>`<button class="opt" data-q="${n}" data-j="${j}">${o}</button>`).join("")}<div class="fb" id="fb${n}"></div></div>`).join("")+"</div>"}
  else if(s.t=="trad")h+=head(s)+`<p>${s.b[0]}</p><div class="tr">${s.p.map(p=>`<div class="fl" data-a="${p[0].replace(/"/g,"&quot;")}" data-b="${p[1].replace(/"/g,"&quot;")}">${p[0]}</div>`).join("")}</div>${s.l?"<h3>Videos y enlaces</h3>"+vids(s.l):""}`;
  else if(s.t=="ml"){if(lang!="ps")mlg=lang;h+=head(s)+`<p>${s.b[0]}</p><div class="tabs">${MLK.map(k=>`<button data-ml="${k}" class="${k==mlg?"on":""}">${LN[k]}</button>`).join("")}</div><div class="box" id="mlt" style="overflow-x:auto">${mlHtml()}</div><div class="li" id="mli" style="margin-top:14px">${liHtml(mlg)}</div>`}
  else if(s.t=="res")h+=`<div class="k">RECURSOS</div><h1>${s.h}</h1><div class="grid">${vids(s.l.slice(0,6))}<div>${vids(s.l.slice(6))}</div></div>`;
- else if(s.t=="fin"){const it=["Módulo 1 completo","Módulo 2 completo","Módulo 3 completo","Módulo 4 completo","Proyecto final entregado"];const tot=Object.values(sc).reduce((a,b)=>a+b,0);
+ else if(s.t=="fin"){const it=["Módulo 1 completo","Módulo 2 completo","Módulo 3 completo","Módulo 4 completo","Módulo 5 completo","Módulo 6 completo","Proyecto final entregado"];const tot=Object.values(sc).reduce((a,b)=>a+b,0);
   h+=`<div class="k">FINAL</div><h1>${s.h}</h1><div class="grid"><div class="box"><b>Reto final integrador</b><p>Registra <b>5 productos</b> en vectores, calcula totales con un <b>subproceso</b>, aplica descuentos con <b>Si</b> y muestra un resumen con <b>Para</b>. Bonus: tradúcelo a Python o a otro de los 5 lenguajes.</p><p class="mut">Aciertos en quizzes: <b>${tot} / ${NQ}</b></p></div><div class="box"><b>Checklist</b>${it.map((t,n)=>`<label class="ck"><input type="checkbox" data-ck="${n}" ${ck[n]?"checked":""}>${t}</label>`).join("")}<div id="ok" class="fb"></div></div></div>`}
  else{const side=avl(s).length?code(s):"";h+=head(s)+`<div class="grid"><div>${s.b.map(x=>`<p>${x}</p>`).join("")}${s.l?"<h3>Videos y enlaces</h3>"+vids(s.l):""}</div>${side}</div>`+(s.c?`<div class="grid" style="margin-top:18px">${s.c.map(c=>`${cardHtml(c)}`).join("")}</div>`:"")+(s.r?`<div class="grid" style="margin-top:18px">${s.r.map(r=>`<div class="box rt"><b>${r[0]}</b><p>${r[1]}</p><button class="chip" data-hn>💡 Ver pista</button><p class="hn">${r[2]}</p></div>`).join("")}</div>`:"")}
  m.innerHTML=h+"</div>";m.scrollTop=0;
@@ -866,7 +1189,7 @@ function render(){
  $("#pv").style.visibility=i?"visible":"hidden";$("#nx").style.visibility=i<S.length-1?"visible":"hidden";
  document.querySelectorAll(".chip[data-n]").forEach(c=>c.classList.toggle("on",+c.dataset.n==s.m));
 }
-function ok(){const e=$("#ok");if(e)e.textContent=[0,1,2,3,4].every(n=>ck[n])?"🎉 ¡Felicitaciones, programador/a! Completaste el curso.":""}
+function ok(){const e=$("#ok");if(e)e.textContent=[0,1,2,3,4,5,6].every(n=>ck[n])?"🎉 ¡Felicitaciones, programador/a! Completaste el curso.":""}
 function go(n){i=Math.max(0,Math.min(S.length-1,n));render()}
 $("#nav").innerHTML=NAMES.map((n,k)=>`<button class="chip" style="--c:${C[k]}" data-n="${k}">${n}</button>`).join("")+'<button id="theme" title="Cambiar tema">🌓</button>';
 document.querySelectorAll(".chip[data-n]").forEach(c=>c.onclick=()=>go(S.findIndex(x=>x.m==c.dataset.n)));
